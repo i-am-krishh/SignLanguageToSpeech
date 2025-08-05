@@ -1,0 +1,166 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="50%" y="50" font-family="Arial" font-size="24" fill="#333333" text-anchor="middle" font-weight="bold">
+    Data Flow Diagram - Level 2
+  </text>
+  
+  <!-- Hand Detection Processes -->
+  <g transform="translate(150,150)">
+    <circle cx="60" cy="0" r="40" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="60" y="0" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      1.1
+      Frame
+      Capture
+    </text>
+  </g>
+  
+  <g transform="translate(300,150)">
+    <circle cx="60" cy="0" r="40" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="60" y="0" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      1.2
+      Hand
+      Detection
+    </text>
+  </g>
+  
+  <!-- Classification Processes -->
+  <g transform="translate(450,150)">
+    <circle cx="60" cy="0" r="40" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="60" y="0" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      2.1
+      Image
+      Preprocessing
+    </text>
+  </g>
+  
+  <g transform="translate(600,150)">
+    <circle cx="60" cy="0" r="40" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="60" y="0" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      2.2
+      CNN
+      Classification
+    </text>
+  </g>
+  
+  <!-- Text Generation Processes -->
+  <g transform="translate(150,350)">
+    <circle cx="60" cy="0" r="40" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="60" y="0" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      3.1
+      Character
+      Recognition
+    </text>
+  </g>
+  
+  <g transform="translate(300,350)">
+    <circle cx="60" cy="0" r="40" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="60" y="0" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      3.2
+      Word
+      Formation
+    </text>
+  </g>
+  
+  <!-- Translation Processes -->
+  <g transform="translate(450,350)">
+    <circle cx="60" cy="0" r="40" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="60" y="0" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      4.1
+      Language
+      Selection
+    </text>
+  </g>
+  
+  <g transform="translate(600,350)">
+    <circle cx="60" cy="0" r="40" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="60" y="0" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      4.2
+      Text
+      Translation
+    </text>
+  </g>
+  
+  <!-- Speech Synthesis Processes -->
+  <g transform="translate(750,350)">
+    <circle cx="60" cy="0" r="40" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="60" y="0" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      5.1
+      Voice
+      Selection
+    </text>
+  </g>
+  
+  <g transform="translate(900,350)">
+    <circle cx="60" cy="0" r="40" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="60" y="0" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      5.2
+      Speech
+      Generation
+    </text>
+  </g>
+  
+  <!-- Data Stores -->
+  <g transform="translate(450,250)">
+    <path d="M0,0 L150,0 L150,30 L0,30 Z" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="75" y="20" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      D1 CNN Model
+    </text>
+  </g>
+  
+  <g transform="translate(700,250)">
+    <path d="M0,0 L150,0 L150,30 L0,30 Z" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+    <text x="75" y="20" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">
+      D2 Language Models
+    </text>
+  </g>
+  
+  <!-- External Entities -->
+  <g transform="translate(50,150)">
+    <rect x="0" y="-25" width="80" height="50" rx="10" fill="#4A9782" stroke="#333333" stroke-width="2"/>
+    <text x="40" y="10" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">
+      Camera
+    </text>
+  </g>
+  
+  <g transform="translate(1050,350)">
+    <rect x="0" y="-25" width="80" height="50" rx="10" fill="#4A9782" stroke="#333333" stroke-width="2"/>
+    <text x="40" y="10" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">
+      User
+    </text>
+  </g>
+  
+  <!-- Arrows -->
+  <g stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrowhead)">
+    <!-- Hand Detection Flow -->
+    <path d="M130,150 L150,150"/>
+    <path d="M270,150 L300,150"/>
+    <path d="M420,150 L450,150"/>
+    
+    <!-- Classification Flow -->
+    <path d="M570,150 L600,150"/>
+    <path d="M525,250 L525,190"/>
+    
+    <!-- Text Generation Flow -->
+    <path d="M210,350 L300,350"/>
+    
+    <!-- Translation Flow -->
+    <path d="M360,350 L450,350"/>
+    <path d="M510,350 L600,350"/>
+    <path d="M775,250 L775,310"/>
+    
+    <!-- Speech Synthesis Flow -->
+    <path d="M660,350 L750,350"/>
+    <path d="M810,350 L900,350"/>
+    <path d="M960,350 L1050,350"/>
+  </g>
+  
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+</svg>
