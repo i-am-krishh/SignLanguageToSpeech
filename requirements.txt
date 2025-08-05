@@ -1,15 +1,13 @@
-streamlit==1.24.0
-numpy==1.24.3
-opencv-python-headless==4.7.0.72
-mediapipe==0.10.0
-tensorflow==2.12.0
-keras==2.12.0
-cvzone==1.6.1
-pyttsx3==2.90
-googletrans==3.1.0a0
-pyenchant==3.2.2
-Pillow==10.0.0
-
+streamlit
+numpy
+opencv-python-headless
+mediapipe
+tensorflow
+cvzone
+pyttsx3
+googletrans
+pyenchant
+pillow
 
 # Explicitly exclude other OpenCV versions to avoid conflicts
 opencv-python
