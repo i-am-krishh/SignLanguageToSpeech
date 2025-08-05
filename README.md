@@ -66,7 +66,7 @@ For details on **Data Flow Diagrams (DFD), Use Case Diagrams, and System Design*
 ```text
 Sign-Language-to-Speech/
 ├── data/            # Training data for ASL alphabets (A-Z)
-├── app.py           # Main Streamlit application
+├── app.py           # Main Streamlit application (renamed from Application.py)
 ├── Model.ipynb      # Model training notebook
 ├── trainedModel.h5  # Trained CNN model
 ├── requirements.txt # Project dependencies

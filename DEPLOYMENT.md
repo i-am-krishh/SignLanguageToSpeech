@@ -33,7 +33,7 @@ This guide will help you deploy the Sign Language to Speech Conversion project o
 
 ### 3. Environment Configuration
 
-The `requirements.txt` file in your repository will automatically be used to install dependencies. Make sure it includes all necessary packages:
+The `requirements.txt` file in your repository will automatically be used to install dependencies. Make sure it includes all necessary packages and excludes conflicting ones:
 
 ```
 streamlit>=1.24.0
@@ -43,12 +43,19 @@ mediapipe>=0.10.0
 tensorflow>=2.13.0
 cvzone>=1.6.1
 pyttsx3>=2.90
-googletrans>=3.1.0a0
+googletrans==3.1.0a0
 pyenchant>=3.2.2
 Pillow>=10.0.0
+
+# Explicitly exclude other OpenCV versions to avoid conflicts
+opencv-python
+opencv-contrib-python
 ```
 
-> **Important Note**: We use `opencv-python-headless` instead of `opencv-python` because the headless version is specifically designed for server environments like Streamlit Cloud that don't require GUI components.
+> **Important Notes**: 
+> - We use `opencv-python-headless` instead of `opencv-python` because the headless version is specifically designed for server environments like Streamlit Cloud that don't require GUI components.
+> - Make sure to exclude other OpenCV packages to prevent version conflicts.
+> - The main application file must be named `app.py` (not `Application.py`) and be located in the repository root.
 
 ### 4. Advanced Settings (Optional)
 
