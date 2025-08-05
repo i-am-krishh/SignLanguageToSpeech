@@ -36,17 +36,19 @@ This guide will help you deploy the Sign Language to Speech Conversion project o
 The `requirements.txt` file in your repository will automatically be used to install dependencies. Make sure it includes all necessary packages:
 
 ```
-streamlit
-numpy
-opencv-python
-mediapipe
-keras
-cvzone
-pyttsx3
-googletrans==3.1.0a0
-pyenchant
-Pillow
+streamlit>=1.24.0
+numpy>=1.24.3
+opencv-python-headless==4.7.0.72  # Use headless version for Streamlit Cloud
+mediapipe>=0.10.0
+tensorflow>=2.13.0
+cvzone>=1.6.1
+pyttsx3>=2.90
+googletrans>=3.1.0a0
+pyenchant>=3.2.2
+Pillow>=10.0.0
 ```
+
+> **Important Note**: We use `opencv-python-headless` instead of `opencv-python` because the headless version is specifically designed for server environments like Streamlit Cloud that don't require GUI components.
 
 ### 4. Advanced Settings (Optional)
 
@@ -71,6 +73,7 @@ In Streamlit Community Cloud dashboard:
    - Check logs in Streamlit Cloud dashboard
    - Verify all dependencies are in `requirements.txt`
    - Ensure `app.py` is in the repository root
+   - If you encounter OpenCV import errors, make sure you're using `opencv-python-headless` instead of `opencv-python`
 
 2. If app crashes:
    - Check memory usage
